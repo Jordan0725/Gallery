@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    margin-bottom: 10%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dadada;
+    background-image: url(wallpaper2.jpg);
+    background-size: cover;
+    backdrop-filter: brightness(120%);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3.5em;
+    color: rgba(255, 214, 9, 0.877);
+    text-align: center;
+    background-color: rgba(88, 88, 88, 0.521);
+    padding: 2%;
+    padding-right: 15px;
+    border-radius: 10px;
+    box-shadow: 6px 5px 15px rgba(0, 0, 0, 0.562);
+    text-shadow: 3px 4px 2px #333;
+}
+
+.carousel {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 6px 5px 15px rgba(0, 0, 0, 0.562);
+    background-color: #66636388;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.527);
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2em;
+    padding: 0.5em;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.carousel-control.prev {
+    left: 10px;
+    border-radius: 100px;
+}
+
+.carousel-control.next {
+    right: 10px;
+    border-radius: 100px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: white;
+}
+img:hover {
+    transform: scale(1.05);
+}
+
